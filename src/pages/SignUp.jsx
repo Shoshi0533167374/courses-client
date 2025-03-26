@@ -13,7 +13,7 @@ import Swal from 'sweetalert2';
 import { fetchAddUser } from "../api/userService";
 import { userIn } from "../features/userSlice";
 
-import "src/styles/signUp-logIn.scss";
+import "../styles/signUp-logIn.scss";
 
 const SignUp = () => {
     const [showPassword, setShowPassword] = useState(false);
