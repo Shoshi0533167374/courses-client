@@ -29,7 +29,7 @@ const CoursesList = () => {
         // טעינת מספר הדפים (totalPages)
         const totalPages = async () => {
             const response = await fetchTotalPagesCount(limit);
-            setPagesCnt(response.data.totalPages);
+            setPagesCnt(response?.data?.totalPages);
         };
         totalPages();
     }, []);

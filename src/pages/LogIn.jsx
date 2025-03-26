@@ -14,7 +14,7 @@ import { userIn } from "../features/userSlice";
 import { fetchLogIn } from "../api/userService";
 import { resetCart } from "../features/cartSlice";
 
-import "../styles/signUp-logIn.scss";
+import "../styles/signUp-LogIn.scss";
 
 
 const LogIn = () => {
