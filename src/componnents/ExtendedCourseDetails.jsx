@@ -10,7 +10,7 @@ const ExtendedCourseDetails = ({ course }) => {
             <p className="description">{course.description}</p>
             <p className="price">{course.price}$</p>
             <img 
-                src={`../../${course.imagePath}`} 
+                src={`${course.imagePath}`} 
                 alt={course.name} 
                 className="course-image"
             />

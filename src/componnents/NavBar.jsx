@@ -70,7 +70,7 @@ const NavBar = () => {
                     </IconButton>
                     <div className='logouser'>
                         <Typography variant="h6" className="logo">
-                            <img src="src\assets\images\logo.png" alt="logo" width="170px" height="70px" />
+                            <img src="https://course-skillgo-byta.netlify.app/images/logo.png" alt="logo" width="170px" height="70px" />
                         </Typography>
                         <Typography variant="h6" className="userName">
                             {!user ? (
