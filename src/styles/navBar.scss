@@ -1,0 +1,58 @@
+.NavBar {
+    position: sticky;
+    top: 0;
+    z-index: 2;
+
+    .nav-container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 20px;
+    }
+
+    .logouser {
+        display: flex;
+        flex: 1;
+    }
+
+    .userName {
+        flex: 1;
+        font-weight: normal;
+        display: flex;
+        padding: 15px;
+        .name{
+            margin-top: 3px;
+            margin-left: 10px;
+        }
+    }
+
+    .nav-links {
+        display: flex;
+        gap: 15px;
+    }
+
+    .menu-button {
+        display: none;
+        /* לא להראות במסכים גדולים */
+    }
+
+    /* שינוי מיקום הכפתור ותפריט הצד למסכים קטנים */
+    @media (max-width: 768px) {
+        .menu-button {
+            display: block;
+            /* להראות כפתור תפריט במסכים קטנים */
+            position: absolute;
+            right: 20px;
+            /* כפתור בצד ימין */
+            top: 15px;
+            /* כפתור בתפריט העליון */
+        }
+
+        .nav-links {
+            display: none;
+            color: black;
+            /* מסתיר את הלינקים במסכים קטנים */
+        }
+
+    }
+}

@@ -1,0 +1,94 @@
+
+.Add-Edit-Course {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+
+    /* תיבות טקסט */
+    .MuiTextField-root {
+        margin-bottom: 15px;
+        background-color: white;
+    }
+
+    .outlined-basic {
+        max-width: 33%;
+    }
+
+    /* עיצוב כללי */
+    h1 {
+        color: #008b8b;
+    }
+
+    h3 {
+        color: #008b8b;
+        /* גוון טורכיז כהה */
+        margin: 0;
+        margin-bottom: 5px;
+        font-size: 20px;
+    }
+
+    /* עיצוב כללי לכפתור */
+    Button {
+        width: 33%;
+        background-color: #008b8b;
+        /* צבע טורכיז לכפתור */
+        color: white;
+
+        &:hover {
+            background-color: #006666;
+            /* גוון כהה יותר בטיפול */
+        }
+    }
+
+    .Mui-error {
+        // background-color: #f1faff;
+        margin: 0;
+        padding-top: 5px;
+    }
+
+    /* עיצוב לרכיב המרצה */
+    .lecturer-section {
+        // border: 2px solid #008b8b;
+        padding: 15px;
+        margin-bottom: 20px;
+        // border-radius: 8px;
+        display: flex;
+        flex-direction: column;
+        width: 33%;
+    }
+
+    /* תיבת טקסט למסכים גדולים */
+    .form-fields {
+
+        flex-wrap: wrap;
+        gap: 20px;
+
+        .outlined-lecturer-basic {
+            flex: 1;
+            max-width: 100% !important;
+        }
+    }
+
+    .btns{
+        // display: flex;
+        text-align: center;
+        width: 49%;
+    }
+.cancelBtn{
+    margin-left: 1%;
+}
+.btn{
+    margin-bottom: 5%;
+}
+    /* רספונסיביות למסכים קטנים */
+    @media (max-width: 768px) {
+        .form-fields {
+            flex-direction: column;
+        }
+
+        .MuiTextField-root {
+            width: 100%;
+        }
+    }
+}

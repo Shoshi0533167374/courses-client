@@ -1,0 +1,272 @@
+// .OneCourse {
+//     margin: 1rem;
+//     padding: 1rem;
+//     background-color: #f9f9f9;
+//     display: flex;
+//     flex-direction: column;
+//     justify-content: space-between;
+//     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+//     border-radius: 8px;
+//     overflow: hidden;
+//     box-sizing: border-box;
+
+//     .typography-image {
+//         display: flex;
+//         justify-content: center;
+//         margin-bottom: 10px;
+//     }
+
+//     .course-image {
+//         width: 100%;
+//         max-width: 300px;
+//         height: auto;
+//         border-radius: 8px;
+//         margin: 0.5rem 0;
+//         object-fit: cover;
+//     }
+
+//     .course-details {
+//         flex: 1;
+//         max-height: 100px;
+//         overflow-y: auto;
+//         margin: 0.5rem 0;
+//         padding: 0.5rem;
+//         background-color: #fff;
+//         border-radius: 4px;
+
+//         h5, p, h6 {
+//             margin: 0.2rem 0;
+//             text-align: center;
+//         }
+
+//         &::-webkit-scrollbar {
+//             width: 8px;
+//         }
+
+//         &::-webkit-scrollbar-thumb {
+//             background-color: darkturquoise;
+//             border-radius: 4px;
+//         }
+
+//         &::-webkit-scrollbar-track {
+//             background-color: #e0e0e0;
+//             border-radius: 4px;
+//         }
+//     }
+
+//     .actions {
+//         display: flex;
+//         justify-content: flex-end;
+//         gap: 0.5rem;
+//         margin-top: 0.5rem;
+
+//         .MuiIconButton-root {
+//             color: #008B8B;
+//             background-color: transparent;
+//             border: 2px solid #008B8B; /* מסגרת קבועה בצבע טורקיז כהה */
+//             border-radius: 50%; /* מסגרת מעוגלת */
+//             transition: background-color 0.3s ease;
+
+//             &:hover {
+//                 background-color: rgba(0, 139, 139, 0.1);
+//             }
+//         }
+
+//         .MuiButton-root {
+//             margin: 0 0.2rem;
+//             color: white;
+//             background-color: #008B8B;
+
+//             &:hover {
+//                 background-color: #006666;
+//             }
+//         }
+//     }
+
+//     @media (max-width: 768px) {
+//         .actions {
+//             justify-content: center;
+//             flex-wrap: wrap;
+//         }
+//     }
+// }
+
+// .OneCourse {
+//     margin: 1rem 0;
+//     padding: 1rem;
+//     display: flex;
+//     align-items: center;
+//     justify-content: space-between;
+//     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+//     background-color: transparent;
+
+//     &.from-cart {
+//         width: 100%;
+//         margin: 0.5rem 0;
+//         padding: 0.5rem;
+//         box-shadow: none;
+//         border-bottom: black solid 1px;
+//         border-radius: 0;
+
+//         .course-image {
+//             width: 120px;
+//             height: 120px;
+//             object-fit: cover;
+//             margin-left: 1rem;
+//             border-radius: 8px;
+//             margin-right: 2%;
+//         }
+
+//         .course-details {
+//             flex: 1;
+//             margin: 0 1rem;
+//             display: flex;
+//             flex-direction: column;
+//             align-items: flex-start;
+
+//             h5, h6 {
+//                 margin: 0.2rem;
+//             }
+//         }
+
+//         .actions {
+//             display: flex;
+//             align-items: center;
+
+//             .MuiIconButton-root {
+//                 color: #008B8B;
+
+//                 &:hover {
+//                     background-color: rgba(0, 139, 139, 0.1);
+//                 }
+//             }
+//         }
+//     }
+
+//     .course-image {
+//         width: 100%;
+//         max-width: 300px;
+//         height: auto;
+//         border-radius: 8px;
+//         margin: 0.5rem 0;
+//         object-fit: cover;
+//     }
+
+//     .typography-image {
+//         display: flex;
+//         justify-content: center;
+//         margin-bottom: 10px;
+//     }
+
+//     .actions {
+//         display: flex;
+//         gap: 0.5rem;
+
+//         .MuiIconButton-root {
+//             color: #008B8B;
+//             background-color: transparent;
+//             border: 2px solid #008B8B;
+//             border-radius: 50%;
+//             transition: background-color 0.3s ease;
+
+//             &:hover {
+//                 background-color: rgba(0, 139, 139, 0.1);
+//             }
+//         }
+//     }
+// }
+
+
+.OneCourse {
+    margin: 1rem 0;
+    padding: 1rem;
+    display: flex;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: transparent;
+    width: 100%;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+
+    &.from-cart {
+        width: 100%;
+        margin: 0.5rem 0;
+        padding: 0.5rem;
+        box-shadow: none;
+        border-bottom: black solid 1px;
+        border-radius: 0;
+
+        .course-image {
+            width: 120px;
+            height: 120px;
+            object-fit: cover;
+            margin-left: 1rem;
+            border-radius: 8px;
+            margin-right: 2%;
+        }
+
+        .course-details {
+            flex: 1;
+            margin: 0 1rem;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+
+            h5, h6 {
+                margin: 0.2rem;
+            }
+        }
+
+        .actions {
+            display: flex;
+            align-items: center;
+
+            .MuiIconButton-root {
+                color: #008B8B;
+
+                &:hover {
+                    background-color: rgba(0, 139, 139, 0.1);
+                }
+            }
+        }
+    }
+
+    .course-image {
+        width: 100%;
+        max-width: 300px;
+        height: auto;
+        border-radius: 8px;
+        margin: 0.5rem 0;
+        object-fit: cover;
+    }
+
+    .typography-image {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 10px;
+    }
+
+    .actions {
+        display: flex;
+        gap: 0.5rem;
+
+        .MuiIconButton-root {
+            color: #008B8B;
+            background-color: transparent;
+            border: 2px solid #008B8B;
+            border-radius: 50%;
+            transition: background-color 0.3s ease;
+
+            &:hover {
+                background-color: rgba(0, 139, 139, 0.1);
+            }
+        }
+    }
+    @media (max-width: 890px) {
+        .OneCourse {
+            max-width: 60% !important;
+        }
+    }
+}
+
+

@@ -1,0 +1,48 @@
+.miniCart {
+    & {
+        background-color: #008b8b;
+        /* גוון טורקיז */
+        color: white;
+        padding: 16px;
+        border-radius: 12px;
+        max-width: 300px;
+        position: fixed !important;
+        bottom: 0 !important;
+        left: 0 !important;
+        margin: 16px;
+        z-index: 1000;
+        /* לוודא שהעגלה תהיה מעל תוכן אחר */
+        min-width: 200px;
+        max-height: 50vh;
+        /* שליש מהגובה של הדף */
+        overflow-y: auto;
+        /* הוספת גלילה */
+    }
+}
+
+.mini-cart-list {
+    padding-right: 8px;
+    /* הוספת רווח בצד ימין כדי לא להיתקל ב-scroll */
+}
+
+.mini-cart-item {
+    display: flex;
+    align-items: center;
+    margin: 8px 0;
+
+    .cart-image {
+        width: 50px;
+        height: 50px;
+        border-radius: 8px;
+        margin-right: 12px;
+    }
+
+    .cart-text {
+        color: white;
+    }
+}
+
+h6,
+p {
+    margin: 0;
+}
